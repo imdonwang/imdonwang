@@ -1,1 +1,1 @@
-![1](https://imdon.wang/static/img/imdon.wang.001.jpeg)
+![1](https://imdon.wang/assets/img/imdon.wang.001.jpeg)
