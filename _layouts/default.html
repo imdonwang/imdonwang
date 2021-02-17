@@ -1,0 +1,15 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+    {% include night_mode.html %}
+    <div class="visible">
+      {{ content }}
+    </div>
+    <script src="{{ "/assets/js/jquery/3.2.1/jquery.min.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/index.min.js" | relative_url }}"></script>
+</body>
+</html>

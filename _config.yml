@@ -1,1 +1,66 @@
-theme: jekyll-theme-minimal
+title: 'Don'
+description: '天秤座，真的很懒。'
+keyword: '江小鱼, 江小鱼的博客, 全栈开发, Javascript, React, Nodejs, Python'
+url: 'https://imdon.wang'
+
+baseurl: ''
+
+# Compress
+compress_html:
+  clippings:      all
+  comments:       ["<!--", "-->"]
+
+# Navigation links
+nav:
+  home: '/'
+  tags: '/tags.html'
+  search: '/search.html'
+
+# Footer
+footer:
+  since: 2020
+
+# Author
+author: '江小鱼'
+nickname: '江小鱼'
+bio: 'Less, but better.'
+avatar: '/assets/img/profile.png'
+
+# Search
+search: true
+
+# Night mode
+night_mode: true
+
+# Theme color, pink or default
+theme_color: 'default'
+
+# SNS settings
+# URL: email, weibo, zhihu, twitter, instagram, github, facebook, linkedin
+sns:
+  github: '//github.com/imdonwang'
+  instagram: '//instagram.com/imdonwang/'
+
+# Tags
+recommend_tags: true # whether or not display recommend_tags on the sidebar
+recommend_condition_size: 12 # a tag will be recommended if the size of it is more than this value
+
+# Build settings，sudo gem install jekyll-paginate
+paginate: 5
+paginate_path: 'page:num'
+exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
+
+# Markdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+# RSS
+RSS: false
+
+# Permalink
+permalink: /:year:month:day/:title.html
+
+# Plugins
+plugins: [jekyll-paginate]

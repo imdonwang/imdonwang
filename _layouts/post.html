@@ -1,0 +1,99 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html>
+  {% include post_head.html %}
+  <script src="{{ "/assets/js/jquery/3.2.1/jquery.min.js" | relative_url }}"></script>
+  <body>
+    {% include night_mode.html %}
+    <div class="g-header-post">{% include header.html %}</div>
+    <header class="g-banner post-header post-pattern-food {{ site.themecolor | prepend: 'bgcolor-' }} {% unless page.cover %}post-no-cover{% endunless %}" data-theme="{{ site.theme_color }}">
+      <div class="post-wrapper">
+        <div class="post-tags">
+          {% if page.tags.size > 0 %}
+            {% for tag in page.tags %}
+              <a href="{{ "/tags.html#" | append: tag | relative_url }}" class="post-tag">{{ tag }}</a>
+            {% endfor %}
+          {% endif %}
+        </div>
+        <h1>{{ page.title }}</h1>
+        <div class="post-meta">
+          <span class="post-meta-item">
+            <i class="fal fa-user-circle"></i>
+              {% if page.author %}
+                {{ page.author }}
+              {% else %}
+                {{ site.author }}
+              {% endif %}
+          </span>
+          <time class="post-meta-item" datetime="{{ page.date | date:" %y-%m-%d" }}"><i class="fal fa-clock"></i> {{ page.date | date_to_string }}</time>
+        </div>
+      </div>
+      {% if page.cover %}
+        <div class="filter"></div>
+        <div class="post-cover" style="background: url('{{ page.cover | relative_url }}') center no-repeat; background-size: cover;"></div>
+      {% endif %}
+    </header>
+    <div class="post-content visible">
+      {% if page.subtitle %}
+        <h2 class="post-subtitle">{{ page.subtitle }}</h2>
+      {% endif %}
+      <article class="markdown-body">
+        {{ page.content }}
+      </article>
+    </div>
+    <section class="author-detail">
+      <section class="post-footer-item author-card">
+        <div class="avatar">
+          <img src="{{ site.avatar | relative_url }}" alt="">
+        </div>
+        <div class="author-name" rel="author">{{ site.author }}</div>
+        <div class="bio">
+          <p>{{ site.bio }}</p>
+        </div>
+        {% if site.sns.size > 0 %}
+          <ul class="sns-links">
+            {% for s in site.sns %}
+              <li>
+                <a href="{{ s[1] }}" target="_blank">
+                  <i class="fab fa-{{ s[0] }}"></i>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </section>
+      <section class="post-footer-item read-next">
+        {% if page.next.url %}
+          <div class="read-next-item">
+            <a href="{{ page.next.url | relative_url }}" class="read-next-link"></a>
+            <section>
+              <span>{{ page.next.title }}</span>
+              <p>{{ page.next.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
+            </section>
+            {% if page.next.cover %}
+              <div class="filter"></div>
+              <img src="{{ page.next.cover | relative_url }}" alt="">
+            {% endif %}
+          </div>
+        {% endif %}
+        {% if page.previous.url %}
+          <div class="read-next-item">
+            <a href="{{ page.previous.url | relative_url }}" class="read-next-link"></a>
+            <section>
+              <span>{{ page.previous.title }}</span>
+              <p>{{ page.previous.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
+            </section>
+            {% if page.previous.cover %}
+              <div class="filter"></div>
+              <img src="{{ page.previous.cover | relative_url }}" alt="">
+            {% endif %}
+          </div>
+        {% endif %}
+      </section>
+    </section>
+    {% include footer.html %}
+    <script src="{{ "/assets/js/index.min.js" | relative_url }}"></script>
+  </body>
+</html>
