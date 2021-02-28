@@ -1,7 +1,9 @@
 <footer class="g-footer">
   <section> 
-    🎉 {{ site.title }} ©
-    {% assign current = "now" | date: "%Y" | plus: 0%}{% unless site.footer.since and site.footer.since == current %}{{ site.footer.since }} - {% endunless %}{{ current }}
+    
+    {% assign current = "now" | date: "%Y" | plus: 0%}
+    &copy; {{ current }} {{ site.title }} 🎉
+    <!-- {% unless site.footer.since and site.footer.since == current %}{{ site.footer.since }} - {% endunless %} -->
   </section>
   <section>Powered by <a href="//github.com/imdonwang" target="_blank">GitHub</a> | <a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi</a></section>
 </footer>
