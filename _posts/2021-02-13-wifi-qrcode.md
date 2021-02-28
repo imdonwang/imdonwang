@@ -11,8 +11,8 @@ tags: 安全
 <div id="qrcode" style="text-align:center;">
     <img src="/assets/img/loading.gif" style="display: block;height:170px;background-color:transparent;">
 </div>
-<input type="text" id="name" style="width:100%; border:1px solid rgba(0,0,0,.15);text-align:center;height:77px;margin-top:15px;" placeholder="输入WIFI名称" />
-<input type="password" id="password" style="width:100%; border:1px solid rgba(0,0,0,.15);text-align:center;height:77px;margin-top:15px;" placeholder="输入WIFI密码" />
+<input type="text" id="name" style="width:100%; border:1px solid rgba(0,0,0,.15);text-align:center;height:77px;margin-top:15px;" maxlength="20" placeholder="输入WIFI名称" />
+<input type="password" id="password" style="width:100%; border:1px solid rgba(0,0,0,.15);text-align:center;height:77px;margin-top:15px;" maxlength="32" placeholder="输入WIFI密码" />
 <script>
     $(function() {
         var qrcode = null;
