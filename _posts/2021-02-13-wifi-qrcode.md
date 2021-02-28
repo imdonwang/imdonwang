@@ -6,7 +6,7 @@ author: 江小鱼
 tags: 安全
 ---
 
-> 通过WIFI账号、密码生成扫描连接的二维码。
+> 将WIFI名称、密码生成扫描连接的二维码。
 
 <div id="qrcode" style="text-align:center;">
     <img src="/assets/img/loading.gif" style="display: block;height:170px;background-color:transparent;">
@@ -17,13 +17,14 @@ tags: 安全
     $(function() {
         var qrcode = null;
         $('input').keyup(function() {
+            var codeText = "WIFI:T:WPA2;S:" + $('#name').val() + ";P:" + $('#password').val() + ";;";
             if(qrcode) {
                 qrcode.clear();
-                qrcode.makeCode("WIFI:T:WPA2;S:" + $('#name').val() + ";P:" + $('#password').val() + ";;");
+                qrcode.makeCode(codeText);
             } else {
                 $('#qrcode').html('');
                 qrcode = new QRCode("qrcode", {
-                    text: "https://imdon.wang",
+                    text: codeText,
                     width: 170,
                     height: 170,
                     colorDark : "#000000",
