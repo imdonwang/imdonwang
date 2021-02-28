@@ -1,6 +1,5 @@
 // Author: Ray-Eldath
 // refer to:
-//  - https://github.com/theme-next/hexo-theme-next/blob/master/source/js/src/utils.js
 
 class utils {
   static getContentVisibilityHeight() {
