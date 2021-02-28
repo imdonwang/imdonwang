@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'WIFI 二维码'
+title: 'WIFI二维码'
 date: 2021-02-28
 author: 江小鱼
 tags: 安全
