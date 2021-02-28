@@ -3,7 +3,7 @@ layout: post
 title: 'WIFI二维码'
 date: 2021-02-28
 author: 江小鱼
-tags: 安全
+tags: 工具
 ---
 
 > 将WIFI名称、密码生成扫描连接的二维码。
