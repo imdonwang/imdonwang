@@ -12,7 +12,7 @@ tags: 工具
     <img src="/assets/img/loading.gif" style="display: block;height:170px;background-color:transparent;">
 </div>
 <div style="float: right;">
-    SSID is hidden：<input type="checkbox" id="isHidden" />
+    Hidden: <input type="checkbox" id="isHidden" />
 </div>
 <input type="text" id="name" style="width:100%; border:1px solid rgba(0,0,0,.15);text-align:center;height:77px;margin-top:15px;" maxlength="20" placeholder="输入WIFI名称" />
 <input type="password" id="password" style="width:100%; border:1px solid rgba(0,0,0,.15);text-align:center;height:77px;margin-top:15px;" maxlength="32" placeholder="输入WIFI密码" />
