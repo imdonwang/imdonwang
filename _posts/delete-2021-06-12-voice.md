@@ -1,6 +1,6 @@
 ---
 layout: post
-title: '语音备忘录📱'
+title: '📱语音备忘录'
 date: 2021-06-12
 author: 江小鱼
 tags: 音乐
