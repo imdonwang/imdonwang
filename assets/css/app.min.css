@@ -501,7 +501,7 @@ a {
 	margin:0 auto
 }
 .post-wrapper {
-	width:720px
+	width:975px;
 }
 .post-header {
 	position:relative;
@@ -615,7 +615,7 @@ a {
 }
 .post-content .post-subtitle {
 	position:relative;
-	width:720px;
+	width:975px;
 	font-size:18px;
 	color:#a6a6a6;
 	font-weight:400;
@@ -642,7 +642,7 @@ a {
 }
 .markdown-body {
 	font-family:Merriweather-Light,-apple-system,Verdana,"PingFang SC","Helvetica Neue",Arial,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
-	width:720px;
+	width:975px;
 	box-sizing:border-box;
 	padding:0 0 32px
 }
@@ -681,7 +681,7 @@ a {
 }
 .read-next {
 	display:flex;
-	width:720px;
+	width:975px;
 	margin:60px auto
 }
 .read-next-item {
