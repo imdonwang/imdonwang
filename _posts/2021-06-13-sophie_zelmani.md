@@ -5,7 +5,7 @@ date: 2021-06-13
 author: 江小鱼
 tags: 音乐
 ---
-一个所有歌我都喜欢的歌手，希望疫情早点结束，好想听音乐会。
+一个每一首歌我都喜欢的歌手，希望疫情早点结束，好想听音乐会。
 <div id="main">
     <video id="player" controls muted autoplay webkit-playsinline playsinline loop style="width:100%;">
         <source src="/assets/video/sophie_zelmani.mov" type="video/ogg">
