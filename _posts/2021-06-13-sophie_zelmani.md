@@ -8,7 +8,7 @@ tags: 音乐
 一个每一首歌我都喜欢的歌手，希望疫情早点结束，好想听音乐会。
 <div id="main">
     <video id="player" controls muted autoplay webkit-playsinline playsinline loop style="width:100%;">
-        <source src="/assets/video/sophie_zelmani.mov" type="video/ogg">
+        <source src="/assets/video/sophie_zelmani.mp4" type="video/mp4">
     </video>
 </div>
 # 推荐专辑
