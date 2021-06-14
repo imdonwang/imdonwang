@@ -11,7 +11,7 @@ tags: 音乐
         <source src="/assets/video/sophie_zelmani.mp4" type="video/mp4">
     </video>
 </div>
-<div style="text-align: right;"><i class="fal fa-map-marker-alt" style="color: #888"></i> <a href="https://maps.apple.com/?address=%E4%B8%AD%E5%9B%BD%E5%8C%97%E4%BA%AC%E5%B8%82%E6%B5%B7%E6%B7%80%E5%8C%BA%E4%B8%AD%E5%85%B3%E6%9D%91%E5%A4%A7%E8%A1%9759%E5%8F%B7&auid=1117160141590460&ll=39.970598,116.313226&lsp=57879&q=%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%B0%91%E5%A4%A7%E5%AD%A6&_ext=CioKBAgDEAgKBAgEEAQKBAgFEAMKBAgFEAMKBAgGEBkKBAgKEAEKBAgbEAMSJCmt6FDMwPpDQDEHvqh95hJdQDkc4XPhwf1DQEGNkebvMhVdQA%3D%3D&t=m" target="_blank">中国人民大学</a></div>
+<div style="text-align: right;color: #888"><i class="fal fa-map-marker-alt" style="color:#aaa"></i> <a href="https://maps.apple.com/?address=%E4%B8%AD%E5%9B%BD%E5%8C%97%E4%BA%AC%E5%B8%82%E6%B5%B7%E6%B7%80%E5%8C%BA%E4%B8%AD%E5%85%B3%E6%9D%91%E5%A4%A7%E8%A1%9759%E5%8F%B7&auid=1117160141590460&ll=39.970598,116.313226&lsp=57879&q=%E4%B8%AD%E5%9B%BD%E4%BA%BA%E6%B0%91%E5%A4%A7%E5%AD%A6&_ext=CioKBAgDEAgKBAgEEAQKBAgFEAMKBAgFEAMKBAgGEBkKBAgKEAEKBAgbEAMSJCmt6FDMwPpDQDEHvqh95hJdQDkc4XPhwf1DQEGNkebvMhVdQA%3D%3D&t=m" target="_blank">中国人民大学</a></div>
 
 ## 推荐专辑
 A Decade of Dreams (1995-2005)
