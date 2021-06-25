@@ -1,8 +1,8 @@
 {% if site.night_mode %}
     <script>
         var hour = new Date().getHours();
-        // if (hour <= 5 || hour >= 20) {
-        //     document.body.className += 'night-mode';
-        // }
+        if (hour <= 5 || hour >= 20) {
+            document.body.className += 'night-mode';
+        }
     </script>
 {% endif %}
