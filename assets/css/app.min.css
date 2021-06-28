@@ -123,7 +123,7 @@ a {
 	height:58px;
 	background-color:#2f3139;
 	color:#fff;
-	padding:0 60px
+	/* padding:0 60px */
 }
 .home-banner {
 	position:relative;
@@ -756,12 +756,12 @@ a {
 	z-index:0
 }
 .tags-banner {
-	height:300px;
+	height:360px;
 	text-align:center
 }
 .tags-banner h2 {
 	font-size:36px;
-	line-height:300px
+	line-height:360px
 }
 .tags-content {
 	width:695px;
