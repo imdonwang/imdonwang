@@ -8,7 +8,7 @@ layout: compress
   <body>
     {% include night_mode.html %}
     <div class="g-header-post">{% include header.html %}</div>
-    <header class="g-banner post-header post-pattern-food {{ site.themecolor | prepend: 'bgcolor-' }} {% unless page.cover %}post-no-cover{% endunless %}" data-theme="{{ site.theme_color }}">
+    <header class="g-banner post-header post-pattern {{ site.themecolor | prepend: 'bgcolor-' }} {% unless page.cover %}post-no-cover{% endunless %}" data-theme="{{ site.theme_color }}">
       <div class="post-wrapper">
         <div class="post-tags">
           {% if page.tags.size > 0 %}
