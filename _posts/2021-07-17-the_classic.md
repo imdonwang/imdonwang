@@ -1,0 +1,48 @@
+---
+layout: post
+title: 'The Classic'
+date: 2021-01-31
+author: 江小鱼
+tags: 美剧
+---
+
+<span id="rocket">🚀</span>
+<link href="/assets/js/videojs/video-js.min.css" rel="stylesheet" />
+<div id="main">
+    <a id="himym" href="https://www.imdb.com/title/tt0460649/" target="_blank">
+        <img src="/assets/img/himym/himym.jpg" alt="How I Met Your Mother" style="width: 100%;" />
+    </a>
+    <video id="player" style="width:100%;display:none;" class="video-js vjs-big-play-centered vjs-big-play-button" webkit-playsinline playsinline x5-playsinline x-webkit-airplay="allow"></video>
+</div>
+<script>
+    var script = document.createElement ("script");
+    script.type = "text/javascript";
+    script.src = "/assets/js/videojs/video.min.js";
+    script.onload = function() {
+        var count = 1;
+        var player = videojs('player', {
+                controls: "true",
+                fluid: "true",
+                preload: "auto",
+                playbackRates: [0.5, 1, 1.5, 2],
+                sources: [{ 
+                    type: "application/x-mpegURL",
+                    src: "//api.imdon.wang:8000/video/aqyyf/01.m3u8"
+                }]
+            }, function() {
+                this.on('play', function() {});
+                this.on('pause', function() {});
+                this.on('ended', function() {});
+            }
+        );
+        $('#rocket').click(function() {
+            if(count === 9) {
+                $('#himym').hide();
+                $('#player, video').show();
+                player.play();
+            }
+            count++;
+        });
+    };
+    document.body.appendChild(script);
+</script>
